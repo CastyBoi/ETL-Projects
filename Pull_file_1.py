@@ -1,14 +1,17 @@
+# This script was written with the plan to execute it as neccesary, to pull a data logging file off of a remote Raspberry Pi. Data would be pulled, then another script could be run to upload information to a SQL Server
+
+
 import paramiko
 import datetime
 from datetime import datetime
 import os
 
 # Replace with your actual values
-device_ip = "10.10.101.18"
-username = "eric-crafco"
-password = "Crafco2022"
-remote_file_path = "/home/eric-crafco/Documents/Data_Logging_Files/Break_Beam_Status.txt"
-local_directory = r"C:\Users\ecastilla\OneDrive - Crafco Inc\Documents\1 - Programming Directory 2\ETL Project 1\Data Files (Input)\RaspPi Files"
+device_ip = "1.2.3.4."
+username = "Rasp-Username"
+password = "Rasp-Password"
+remote_file_path = "home/Documents/Data_Logging_Files/Break_Beam_Status.txt"
+local_directory = r"C:\Users\eric-c\ETL Project 1\Data Files (Input)\RaspPi Files" # File paths are all examples
 
 def pull_and_delete_file():
     try:

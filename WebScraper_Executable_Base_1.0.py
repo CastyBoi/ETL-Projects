@@ -11,7 +11,8 @@ import os
 from datetime import datetime
 
 # Set the user agent to mimic a real browser
-user_agent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+user_agent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" 
+# User Agent from network section of website inspect
 
 # Set up Chrome options for headless mode
 chrome_options = Options()
@@ -202,7 +203,7 @@ current_time = datetime.now().strftime("%H%M")
 output_file_name = f'Webscraper Data ({current_time}).csv'
 
 # File path
-output_directory = r"C:\Users\ecastilla\OneDrive - Crafco Inc\Documents\1 - Programming Directory 2\ETL Project 1\Data Files (Input)\WebScraper Files"
+output_directory = r"C:\Users\eric-c\ETL Project 1\Data Files (Input)\WebScraper Files"
 output_file_path = os.path.join(output_directory, output_file_name)
 
 # Output command
@@ -212,4 +213,5 @@ time.sleep(10)
 
 ### Creating an executable file (for task scheduling or whatever tf we want)
 # cd into the directory that the program is in, and we want the executable to be in
-# pyinstaller --onefile WebScraper_Executable_1.0.py
+# pyinstaller --onefile WebScraper_Executable_1.0.py 
+# change pyinstaller name to whatever the filename is

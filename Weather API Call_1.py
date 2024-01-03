@@ -9,7 +9,8 @@ import json
 # API URL Variables
 lat = "33.3528" # N
 long = "-111.7890" # W
-api_key = 'dbcbd9d8e0f8d74d0f455ad03377d5cb'
+# Above Lat and Long for Gilert Arizona
+api_key = 'Your-Api-Key'
 
 # API Endpoint URL
 api_url = f"https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={long}&appid={api_key}&units=imperial"

@@ -17,15 +17,15 @@ def SQL_Connection_Test():
     global Server_Name, Server_Port, Database_Name, Username_1, Password_1, connection_url, engine
     
     # Connection Variable Setup
-    Server_Name = '10.10.100.70' # Desktop Server Address
+    Server_Name = '1.2.3.4' # Desktop Server Address (Generic IP Used)
     Server_Port = 1433
     Database_Name = 'Test_Database_1'
     # Driver_Name = '{SQL Server}' # Driver Name
     # Driver_Name_2 = '{ODBC Driver 18 for SQL Server}'
 
     # Login Info for Crafco_Data_Logging DB 
-    Username_1 = 'Python_1' 
-    Password_1 = 'Pythoniscool10!'
+    Username_1 = 'Python' 
+    Password_1 = 'Pythoniscool'
     # User has Read and Write permission
         
     connection_url = URL.create(
@@ -62,7 +62,7 @@ print('\n')
 
 def sql_append():
     # CSV file path (adjust as needed)
-    file_path = r'ETL Project 1\Data Files\RaspPi Files\Break_Beam_Status_2023-12-11.txt'
+    file_path = r'ETL Project 1\Data Files\RaspPi Files\Break_Beam_Status.txt' # Replace with actual file path
     
     # Assuming your DataFrame columns are ['Status', 'Location', 'Timestamp']
     # Adjust the names accordingly based on your DataFrame columns
